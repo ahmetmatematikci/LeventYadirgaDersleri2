@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.levenyadirga.ahmetmatematikci.levenyadirgadersleri.OtomatikDoldurma">
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:popupBackground="#000000"
+        android:completionThreshold="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="AutoCompleteTextView" />
+
+    <MultiAutoCompleteTextView
+        android:popupBackground="#000000"
+        android:completionThreshold="1"
+        android:id="@+id/multiAutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:layout_marginTop="56dp"
+        android:hint="MultiAutoCompleteTextView" />
+</RelativeLayout>

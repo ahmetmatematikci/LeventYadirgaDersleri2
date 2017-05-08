@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">LevenYadirgaDersleri</string>
+    <array name="cihaz">
+        <item>Android</item>
+        <item>BalckBary</item>
+        <item>Ohone</item>
+        <item>Diğer</item>
+    </array>
+
+    <array name="renkler">
+        <item>Sarı</item>
+        <item>Kırmızı</item>
+        <item>Yeşil</item>
+        <item>mavi</item>
+    </array>
+
+    <array name="sehirler">
+        <item>Adana</item>
+        <item>Mersin</item>
+        <item>Ankara</item>
+        <item>İStanbul</item>
+    </array>
+    <string name="title_activity_optins_menu_olusturma">OptinsMenuOlusturma</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_action_bar_ozel">ActionBarOzel</string>
+    <string name="action_settings">Settings</string>
+</resources>

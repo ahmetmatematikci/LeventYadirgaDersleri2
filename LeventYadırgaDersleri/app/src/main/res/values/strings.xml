@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Levent Yadırga Dersleri</string>
+    <array name="personel">
+        <item>Ali</item>
+        <item>Vel,</item>
+        <item>Can</item>
+        <item>Canan</item>
+        <item>Ayşe</item>
+        <item>KJerem</item>
+        <item>asdas</item>
+        <item>asasdasdasd</item>
+
+
+    </array>
+    <string name="title_activity_contex_menu_action_mode">ContexMenuActionMode</string>
+    <string name="html">
+        <![CDATA[<b> kalın yazı</b><i>İtalik Yazı></i><a><font color = "#32cd32">Renkli yazı</a>]]>
+
+    </string>
+
+    <color name="arkaplan">#009688</color>
+    <color name="butonRengi">#004D40</color>
+    <color name="butonRengiPres">#00BFA5</color>
+
+    <string-array name="renklendirmeler">
+    <item>Kırmızı</item>
+    <item>Yeşil</item>
+    <item>Mavi</item>
+    <item>Sarı</item>
+    <item>Turuncu</item>
+    <item>Beyaz</item>
+    <item>Siyah</item>
+    <item>Gri</item>
+    </string-array>
+
+    <string-array name="renk_pozisyon">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+</resources>

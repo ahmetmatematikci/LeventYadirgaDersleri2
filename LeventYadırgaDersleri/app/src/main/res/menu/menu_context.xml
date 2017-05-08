@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/duzenle"
+        android:orderInCategory="100"
+        android:title="Duzenle"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/paylas"
+        android:orderInCategory="101"
+        android:title="Paylaş"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/sil"
+        android:orderInCategory="102"
+        android:title="Sil"
+        app:showAsAction="never"/>
+
+</menu>
