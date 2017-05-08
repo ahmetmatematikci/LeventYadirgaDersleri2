@@ -1,9 +1,11 @@
 package com.egitim.ahmetmatematikci.leventyadrgadersleri;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.media.MediaPlayer;
+import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,6 +20,7 @@ public class UygulamaOrnegi extends AppCompatActivity implements SharedPreferenc
     int count;
     RelativeLayout rl;
     MediaPlayer ses;
+    Vibrator titresim;
 boolean sesDurumu , titresimDurumu;
     SharedPreferences preferences, ayarlar;
 
@@ -40,6 +43,7 @@ boolean sesDurumu , titresimDurumu;
         ayarlar = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
         ses = MediaPlayer.create(getApplicationContext(), R.raw.buttonses);
+        titresim = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
 
         ayarlariYukle();
 
@@ -52,7 +56,10 @@ boolean sesDurumu , titresimDurumu;
             public void onClick(View v) {
                 if (sesDurumu) {
                     ses.start();
-                   // sesDurumu = false;
+
+                }
+                if (titresimDurumu) {
+                    titresim.vibrate(1000);
                 }
                 count++;
                 btn.setText("" + count);
@@ -65,7 +72,7 @@ boolean sesDurumu , titresimDurumu;
         String pos = ayarlar.getString("arkaplan", "5");
         switch (Integer.valueOf(pos)) {
             case 0:
-                rl.setBackgroundColor(Color.RED);
+                rl.setBackgroundResource(R.drawable.background);
                 break;
             case 1:
                 rl.setBackgroundColor(Color.GREEN);

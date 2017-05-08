@@ -23,14 +23,14 @@
     <color name="butonRengiPres">#00BFA5</color>
 
     <string-array name="renklendirmeler">
-    <item>Kırmızı</item>
-    <item>Yeşil</item>
-    <item>Mavi</item>
-    <item>Sarı</item>
-    <item>Turuncu</item>
-    <item>Beyaz</item>
-    <item>Siyah</item>
-    <item>Gri</item>
+        <item>Kırmızı</item>
+        <item>Yeşil</item>
+        <item>Mavi</item>
+        <item>Sarı</item>
+        <item>Turuncu</item>
+        <item>Beyaz</item>
+        <item>Siyah</item>
+        <item>Gri</item>
     </string-array>
 
     <string-array name="renk_pozisyon">
