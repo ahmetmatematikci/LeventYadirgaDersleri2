@@ -3,6 +3,7 @@ package com.egitim.ahmetmatematikci.leventyadrgadersleri;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ public class UygulamaOrnegi extends AppCompatActivity implements SharedPreferenc
     Button btn;
     int count;
     RelativeLayout rl;
+    MediaPlayer ses;
 boolean sesDurumu , titresimDurumu;
     SharedPreferences preferences, ayarlar;
 
@@ -37,6 +39,8 @@ boolean sesDurumu , titresimDurumu;
         preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         ayarlar = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
+        ses = MediaPlayer.create(getApplicationContext(), R.raw.buttonses);
+
         ayarlariYukle();
 
         count = preferences.getInt("count_anahtari", 0);
@@ -46,6 +50,10 @@ boolean sesDurumu , titresimDurumu;
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (sesDurumu) {
+                    ses.start();
+                   // sesDurumu = false;
+                }
                 count++;
                 btn.setText("" + count);
 
