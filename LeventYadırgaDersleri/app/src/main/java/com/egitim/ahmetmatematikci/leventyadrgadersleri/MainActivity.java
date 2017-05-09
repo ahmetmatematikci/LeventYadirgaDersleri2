@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends ListActivity {
 
     String[] sayfalar = {"ContexMenuKullanimi", "ContexMenuActionMode","DialogPencere","UygulamaOrnegi",
-    "GeriButonuEkleme","XMLParse"};
+    "GeriButonuEkleme","XMLParse","MeterialDesign","ScrolingBar", "DaireselAnimasyon"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
