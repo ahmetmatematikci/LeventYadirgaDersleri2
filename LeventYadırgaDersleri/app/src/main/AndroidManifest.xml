@@ -3,6 +3,7 @@
     package="com.egitim.ahmetmatematikci.leventyadrgadersleri">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -26,7 +27,8 @@
         <activity android:name=".DialogPencere" />
         <activity android:name=".UygulamaOrnegi" />
         <activity android:name=".Ayarlar" />
-        <activity android:name=".GeriButonuEkleme"></activity>
+        <activity android:name=".GeriButonuEkleme" />
+        <activity android:name=".XMLParse"></activity>
     </application>
 
 </manifest>
